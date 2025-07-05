@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device">
+    <title>GRID</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+            padding: 30px;
+            
+        }
+
+        .grid-item {
+            background-color: rgb(32, 122, 122);
+            color: rgb(194, 194, 221);
+            padding: 30px;
+            text-align: center;
+            font-size: 30px;
+            border-radius: 5px;
+        }
+         @media(max-width:600px){
+                .grid-container{
+                    background-color: brown;
+                    font-size: 40px;
+                }
+            }
+        .static-grid-container{
+            position: static;
+            background-color: purple;
+        }
+        .relative-grid-container{
+            position: relative;
+            top:30px;
+            left: 300px;
+            color: aquamarine;
+        }
+    </style>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+</head>
+
+</html>

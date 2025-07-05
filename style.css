@@ -1,0 +1,61 @@
+body{
+    height:100 vph;
+    width:100 vpw;
+    justify-content: center;
+    align-items: center; 
+    background-color: lightgreen;
+}
+.container
+{
+   display:flex;
+    height:300 vph;
+    width:300 vpw; 
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+    background-color: blueviolet;
+
+    
+}
+ @media(max-width:500px){
+    .container{
+        background-color: brown;
+        font-size: 40px;
+     }
+}
+.box
+{
+    width:200px;
+    height:200px;
+    margin:10px;
+    padding:10px;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+
+}
+.box1
+
+{
+    
+    justify-content: center;
+    
+    background-color:lightcoral;
+}
+.box2
+
+{
+    
+    justify-content: center;
+    
+    background-color:paleturquoise;
+    
+}
+.box3
+
+{
+    
+    justify-content: center;
+    
+    background-color:aquamarine;
+}

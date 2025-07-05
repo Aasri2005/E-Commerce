@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width, initial-width=1.0">
+        <title>Registration</title>
+    </head>
+    <body>
+        <h1>Contact & Estimate Form</h1>
+        <form action="submit.html" method="post"></form>
+        <h4></h4>
+        <br><br>
+        <!--Name-->
+        <h3><label for="name">Full Name</label></h3>
+        <input type="text" name="name" placeholder="First name" required>
+        <input type="text" name="name" placeholder="Last name" required>
+        <br><br>
+        <!--Email-->
+        <h3><label for="email">Email id</label></h3>
+        <input type="email" name="email" placeholder="eg:aasri.paru1234@gmail.com" required>
+        <br><br>
+        <!--Phone no-->
+        <h3><label for="phone no">Phone Number</label></h3>
+        <input type="number" name="number" placeholder="90124 57831" required>
+        <br><br>
+        <!--Company name-->
+        <h3><label for="company name">Company Name</label></h3>
+        <input type="text" name="company name" placeholder="" required>
+        <br><br>
+        <!--Website-->
+        <h3><label for="website">Website</label></h3>
+        <input type="text" name="website" placeholder="" required>
+        <br><br>
+        <!--Industry-->
+        <h3><label for="industry">Industry</label></h3>
+        <input type="text" name="industry" placeholder="" required>
+        <br><br>
+        <!--Services-->
+        <h3><label for="services">Services You're interested in</label></h3>
+        
+        <input type="checkbox" name="website" value="website">
+        <label for="website">Website</label><br>
+        
+        <input type="checkbox" name="printed media" value="printed value">
+        <label for="printed media">Printed Media</label><br>
+        
+        <input type="checkbox" name="branding & identity" value="branding & identity">
+        <label for="branding & identity">Branding & Identity</label><br>
+        
+        <input type="checkbox" name="photography" value="photography">
+        <label for="photography">Photography</label><br>
+        
+        <input type="checkbox" name="video" value="video">
+        <label for="video">Video</label><br>
+        
+        <input type="checkbox" name="social media" value="social media">
+        <label for="social media">Social Media</label>
+        <br><br>
+        <!--Project Budget-->
+        <h3><label for="project budget">Project Budget</label></h3>
+        <select id="project budget" name="project budget">
+            <option value="1000">1000</option>
+            <option value="2000">2000</option>
+            <option value="3000">3000</option>
+            <option value="4000">4000</option>
+            <option value="5000">5000</option>
+            <option value="6000">6000</option>
+        </select>
+        <br><br>
+        <!--About Your Projects-->
+        <h3><label for="about your projects">Tell us about your project(s)</label></h3><br>
+        <textarea id="message" name="message" rows="5" columns="5" placeholder="" required></textarea>
+        <br><br>
+        <!--What brought you here-->
+        <h3><label for="what brought you to our website">What Brought you to our website?</label></h3>
+        <select id="what brought you to our website" name="what brought you to our website">
+            <option value=""selected disabled>--Please Select--</option>
+            <option value="parents">Parents</option>
+            <option value="friends">Friends</option>
+            <option value="youtube">Youtube</option>
+            <option value="relatives">Relatives</option>
+            <option value="other websites">Other Websites</option>
+        </select>
+        <br><br>
+        <!--Sign up-->
+        <h3>Sign-Up for our New Setter</h3>
+        
+        <input type="checkbox" name="signup" value="I'd love to sign up to get further news from your website">
+        <label for="signup">I'd love to sign up to get further news from your website</label>
+        <br>
+        <h1><marquee>THANK YOU!!</marquee></h1>
+    </body>
+</html>
