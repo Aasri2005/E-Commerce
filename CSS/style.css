@@ -136,7 +136,8 @@ details summary{
     list-style: none;
     cursor: pointer;
     position: relative;
-    padding-right:40px;
+    padding: 20px;
+    padding-right:30px;
 }
 details summary::-webkit-details-marker{
     display:none;
@@ -144,7 +145,7 @@ details summary::-webkit-details-marker{
 details summary::after{
     content:"+";
     position:absolute;
-    right:10px;
+    right:30px;
     font-size: 30px;
     color:white;
 }
@@ -154,14 +155,14 @@ details[open] summary::after{
 .container{
     color: white;
     font-size: 25px;
-    padding: 20px;
+    padding: 15px;
 }
 #email1{
     background-color: black;
     color:white;
     padding:20px;
     margin: 15px;
-    left: 350px;
+    left: 400px;
     width: 350px;
     position:absolute;
 }
@@ -172,20 +173,20 @@ details[open] summary::after{
     position:absolute;
     padding:20px;
     margin:15px;
-    left:750px;
+    left:800px;
 }
 .link{
     position:absolute;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(5,1fr);
     left:300px;
     gap:20px;
     color: blue;
 }
 #language1{
    position: absolute;
-    top: 2160px;
-    margin: 15px;
+    top: 2380px;
+    margin: 20px;
     width: 150px;
     background-color: black;
     color: antiquewhite;
