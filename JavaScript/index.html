@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //Example for string//
+            let string="Hello";
+            console.log("Hey Guys!!");
+            alert("Thank you for coming!!!");
+            document.write("Welcome everyone!!!");
+            
+            //Example for object//
+            let person={
+                name:"Ashy",
+                age:19,
+                branch:"cse"
+            }
+            console.log(person);
+            //Adding or Insertion of oject//
+            person.group="Btech";
+            console.log(person);
+            //Deleting of object//
+            delete person.age;
+            console.log(person);
+            //Updating in oject//
+            person.branch="CSE-AI";
+            console.log(person);
+
+            //Array//
+            let fruits=["apple","mango","watermelon","grapes","pineapple"]
+            console.log(fruits);
+            //Insertion at End//
+            fruits.push("orange");
+            console.log(fruits);
+            //Insertion at First//
+            fruits.unshift("cherry");
+            console.log(fruits);
+            //Insertion in Between//
+            fruits[2]="banana";
+            console.log(fruits);
+            //Deletion at End//
+            fruits.pop();
+            console.log(fruits);
+            //Deletion at First//
+            fruits.shift();
+            console.log(fruits);
+            //Length of array//
+            console.log(fruits.length);
+            //Adding new item
+            fruits.splice(1,1,"Mango");
+            console.log(fruits);
+            fruits.splice(1,3,"Cherry");
+            console.log(fruits);
+            //Slice//
+            let sliced=fruits.slice(0,2);
+            console.log(sliced);
+            let d=["a","b","c","d","e","f"];
+            let e=d.slice(1,3);
+            console.log(e);
+            //indexOf//
+            console.log(d.indexOf("d"));
+            //Include example//
+            console.log(d.includes("e"));
+            console.log(d.includes("j"));
+            //Function//
+            function myfun(){
+                console.log("Hello Everyone!!!");
+            }
+            myfun();
+            myfun();
+            myfun();
+            //With parameters//
+            function myfunc(name){
+                console.log("Hi "+ name);
+            }
+            myfunc("Aasri");
+            myfunc("Deepu");
+            //Two parameters//
+            
+            function fun(a,b){
+                console.log(a+b);
+            }
+            fun("41","5");
+            function func(a,b){
+                console.log(a+b);
+                 }
+            func(235,155);
+            function sub(a,b){
+                console.log(a-b);
+                 }
+            sub(235,155);
+            function mul(a,b){
+                console.log(a*b);
+               }
+            mul(235,155);
+             function div(a,b){
+                console.log(a/b);
+                }
+            div(235,155);
+            //Return Key word//
+            function myFunc(){
+                return "Aasritha";
+            }
+            let name=myFunc();
+            console.log(name);
+            //Anonymous Function//
+            const greet= function(name){
+                return "Hello "+name;
+            };
+            console.log(greet("Aasri"));
+            //Anonymous Function without using variable//
+            (function(name){
+                console.log("Heello "+name);
+            })
+            ("Deepu");
+            //Anonymous Function without passing any parameters//
+            const anony=function(){
+            
+            }
+            console.log("Hi Guys!!");
+            //Arrow Function//
+            const funs=(name) => "Hello,"+name;
+            console.log(funs("Siri"));
+            //Arrow Function with Arguments//
+            const sum=(a,b)=>{
+                return(a+b);
+            }
+            console.log(sum(45,23));
+            //Arrow Function without Arguments//
+            const fact=()=>{
+            }
+            console.log("Hey Guysss!!");
+            //Callback Function//
+            function myfuncs(val){
+                console.log(val(),'hey');
+            }
+            function callback(){
+                console.log("I am calling back the function");
+                return "called";
+            }
+            myfuncs(callback);
+            //Callback Function By passing 2 variables//
+            function funcs(sum,a,b){
+                sum(a+b);
+            }
+            function call(p){
+                console.log(p);
+            }
+            funcs(sum,54,45);
+            //Date
+             let today=new Date();
+            //for getting year//
+            console.log("Year:",+today.getFullYear());
+            //for month//
+            console.log("Month:",+today.getMonth()+1);
+            //date//
+            console.log("Date:",+today.getDate());
+            //hours//
+            console.log("Hours:",+today.getHours());
+            //minutes//
+            console.log("Minutes:",+today.getMinutes());
+            //seconds//
+            console.log("Seconds:",+today.getSeconds());
+            //millisecond//
+            console.log("Milliseconds:",+today.getMilliseconds());
+            
+            
+            //Regular Expression//
+            let text="Hello World";
+            let pattern=/Hello/;
+                console.log(pattern.test(text));
+            //Example for num//
+            let num=1234567890;
+            let pat1=/\d{15}/;
+            console.log(pat1.test(num));
+            //Example for string//
+            let str="The is my book";
+            let pat2=/b.o/;
+            console.log(pat2.test(str));
+            //Example for word//
+            let str1="@3daarvs&&!!";
+            let pat3=/\w{9}/;
+            console.log(pat3.test(str1));
+            //Example for space//
+            let str2="Helllo welcome to MREC";
+            let pat4=/\s/;
+            console.log(pat4.test(str2));
+            //Example for start of string//
+            let str3="Hello everyone";
+            let pat5=/^Hello/;
+            console.log(pat5.test(str3));
+            //Example for end of string//
+            let str4="Hello Everyone";
+            let pat6=/one$/;
+            console.log(pat6.test(str4));
+            //Example for match anyone character inside//
+            let str5="o";
+            let pat7=/[aeiou]/;
+            console.log(pat6.test(str5));
+            //Example for zero or one//
+            let str6="color";
+            let pat8=/col?r/;
+            console.log(pat8.test(str6));
+            //Example for n and m times//
+            let patt=/\d{2,4}/;
+            let strr="Year:2025";
+            console.log(patt.test(strr));
+            //Example for OR//
+            let pat9=/cat|dog/;
+            let str7="I have a cat";
+            console.log(pat9.test(str7));
+            //Example for grouping//
+            let patt1=/(abc)+/;
+            let str8="abcabcabcabc";
+            console.log(patt1.test(str8));
+        </script>
+    </body>
+</html>

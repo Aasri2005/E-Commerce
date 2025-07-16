@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-width=1.0">
+        <title>Netflix</title>
+        <style>
+            body{
+                background-image: url("net.jpg");
+                background-size:cover;
+                background-repeat:"no-repeat";
+                background-position: initial;
+            }
+            h1{
+                color:red;
+                text-align: left;
+                font-size: 50px;
+                margin: 50px;
+                font-weight: bold;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            #email{
+                background-color: rgba(0, 0, 0, 0.993);
+                color:white;
+                padding: 15px;
+                margin: 30px;
+                width: 350px;
+            }
+            h2{
+                color: white;
+                font-size: 45px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                position: absolute;
+                left:80px;
+                top:10px
+            }
+            #email{
+                color: white;
+                width:350px;
+                position: absolute;
+                top:120px;
+                left:50px;
+            }
+            #password{
+                width:350px;
+                position: absolute;
+                top:230px;
+                left:80px;
+                background-color: black;
+                color: white;
+                padding: 15px;
+            }
+            #signin{
+                background-color: red;
+                color:white;
+                position: absolute;
+                top: 320px;
+                left:85px;
+                padding:15px;
+                width:380px;
+                font-size: 20px;
+                border-radius: 5px;
+            }
+            h3{
+                color: aliceblue;
+                position: absolute;
+                top:400px;
+                left:250px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            #signincode{
+                background-color: rgb(175, 168, 168);
+                color: white;
+                position: absolute;
+                top: 470px;
+                left:90px;
+                width:380px;
+                padding: 15px;
+                font-size: 20px;
+                border-radius: 5px;
+            }
+            #rememberme{
+                color: white;
+                position: absolute;
+                top: 600px;
+                left:80px;
+                line-height: normal;
+                width:15px;
+                height:15px;
+            }
+            h4{
+                color: rgb(136, 129, 129);
+                position: absolute;
+                top:630px;
+                left:80px;
+                font-size: 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight:lighter;
+            }
+            .container1{
+                background-color: rgb(51, 38, 38);
+                width: 1300px;
+                height:300px;
+                position: absolute;
+                top:1100px;
+                left:0px;
+            }
+            .links{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                position: absolute;
+                left: 160px;
+                gap:30px;
+                top: 100px;
+            }
+            #language{
+                position: absolute;
+                top: 200px;
+                left:150px;
+                width: 150px;
+                background-color: black;
+                color: antiquewhite;
+                font-size: large;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>NETFLIX</h1>
+        <div class="conatainer"style="background-color:black;height:800px;width:500px; padding:25px;margin:30px;position:absolute;left:400px;opacity:90%">
+            <form>
+                 <h2>Sign In</h2>
+                 <input type="email" id="email" name="email" placeholder="Email or Mobile Number" required>
+                 <input type="password" id="password" name="password" placeholder="Password" required>
+                 <button id="signin" name="signin">Sign In</button>
+                 <h3>OR</h3>
+                 <button id="signincode" name="signincode">Use a sign-in code</button>
+                 <a href="#" style="color:white;position:absolute;top:540px; left:210px;font-size:20px">Forgot password?</a>
+                 <input type="checkbox" id="rememberme" name="rememberme" value="rememberme">
+                 <label name="rememberme" style="color: white;position:absolute;top: 600px;left:110px;font-size:20px">Remember me</label>
+                 <br>
+                 <h4>New to Netflix?</h4>
+                 <a href="#" style="color: white;position:absolute;top:657px;left:220px;font-size:20px">Sign up now.</a>
+                 <h5 style="color: rgb(158, 152, 152); position:absolute;top:690px;left:80px; font-size:15px">This page is protected by Google reCAPTCHA to ensure</h5>
+                 <h5 style="color: rgb(158, 152, 152); position:absolute;top:705px;left:80px;font-size:15px">you're not a bot.</h5>
+                 <a href="#" style="color: rgb(54, 54, 245); position:absolute;top:750px;left:80px">Learn more.</a>
+            </form>
+        </div>
+        <br>
+        <div class="container1">
+            <p style="color: white; padding:50px;position:relative;left:100px;font-size:20px">Questions? Call 000-800-919-1743 (Toll-Free)</p>
+            <div class="links">
+                <a href="#" style="color: white;">FQA</a>
+                <a href="#" style="color: white;">Help Center</a>
+                <a href="#" style="color: white;">Terms of Use</a>
+                <a href="#" style="color: white;">Privacy</a>
+                <a href="#" style="color: white;">Cookie Preferences</a>
+                <a href="#" style="color: white;">Coperate Information</a>
+            </div>
+            <select id="language" name="language">
+                 <option value="English">English</option>
+                 <option value="Hindi">Hindi</option>
+            </select>
+        </div>
+    </body>
+</html>

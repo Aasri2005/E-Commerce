@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Animation Property</title>
+        <style>
+            div{
+                height:200px;
+                width:200px;
+                color: white;
+                text-align: center;
+                position: relative;
+                letter-spacing: 5px;
+                line-height:30px;
+                margin: 20px 20px 20px 20px;
+                animation-name:myAnimation;
+                animation-duration:10s;
+                animation-iteration-count:infinite;
+                animation-direction:alternate;
+            }
+            .body{
+                width:200px;
+                height:200px;
+                color:yellow;
+                text-align: center;
+                transition: transform 3.s ease;
+                margin:50px auto;
+            }
+            .body:hover{
+                background-color: blueviolet;
+                transform: scale(12.5s);
+                
+            }
+
+            }
+            @keyframes myAnimation{
+                0%{
+                    background-color: crimson;
+                    width:0px;
+                    height:0px;
+                    border-radius: 10px;
+                }
+                20%{
+                    background-color: royalblue;
+                    width: 10px;
+                    height: 40px;
+                    border-radius: 10px;
+                }
+                40%{
+                    background-color: rgb(3, 107, 121);
+                    width: 60px;
+                    height: 80px;
+                     border-radius: 10px;
+                }
+                60%{
+                 background-color: rgb(196, 15, 126);
+                   width: 90px;
+                    height: 120px;
+                     border-radius: 10px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="body">HEY!</div>
+        </div>
+    </body>

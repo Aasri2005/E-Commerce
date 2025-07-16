@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //if statement
+            let isRain=true;
+            if(isRain){
+                console.log("Stay home");
+            }
+            //if-else statement
+            let a=20;
+            if(a>=18){
+                console.log("Adult");
+            }
+            else(a<=18);{
+                console.log("Minor");
+            }
+            //if-elseif statement
+            let marks=89;
+            if(marks>=90){
+                console.log("Grade is A");
+            }
+            else if(marks>=80){
+                console.log("Grade is B");
+            }
+            else if(marks>=70){
+                console.log("Grade is C");
+            }
+            else if(marks>=65){
+                console.log("Grade is D");
+            }
+            else{
+                console.log("Fail");
+            }
+            //switch statement
+            let day=5;
+            switch(day){
+                case 1:{
+                    console.log("Monday");
+                }
+                break;
+                case 2:{
+                    console.log("Tuesday");
+                }
+                break;
+                case 3:{
+                    console.log("Wednesday");
+                }
+                break;
+                case 4:{
+                    console.log("Thursday");
+                }
+                break;
+                case 5:{
+                    console.log("Friday");
+                }
+                break;
+                case 6:{
+                    console.log("Saturday");
+                }
+                break;
+                default:{
+                    console.log("No day");
+                }
+            }
+            //Even or odd
+            let b=34;
+            if(b%2==0){
+                console.log("Even");
+            }
+            else{
+                console.log("Odd");
+            }
+            //Prime or not
+            let n=47;
+            if(n%n==0 && n%1==0){
+                console.log("Prime");
+            }
+            else{
+                console.log("Not prime");
+            }
+            //for loop
+            for(let i=1;i<=5;i++){
+                console.log(i);
+            }
+            //while loop
+            let i=0;
+            while(i<=5){
+                console.log("hi"+i);
+                i++;
+            }
+            //do-while
+            let j=0;
+            do{
+                console.log("hey"+j);
+                j++;
+            }
+            while(j<=5);
+            //to retrive 20 prime numbers
+            let num=17;
+            isprime=true;
+            for(let i=2;i<num;i++){
+                if(num%i===0){
+                    isprime=false;
+                    break;
+                }
+            }
+            console.log(isprime?"prime":"non-prime");
+            //Multiplication
+            let mul=19;
+            for(i=1;i<=10;i++){
+                console.log(`${mul}*${i}=${mul*i}`);
+            }
+            //Factorial
+            let n1=12;
+            let fact=1;
+            for(let i=1;i<=n1;i++){
+                fact=fact*i;
+            }
+            console.log(fact);
+            //Perfect number
+            let n2=28;
+            let sum=0;
+            for(let i=1;i<n2;i++){
+                if(n2%i==0){
+                  sum=sum+i;
+                }}
+            console.log(sum==n2?"It's perfect number":"It's not perfect number");
+            //To find the largest number in the given 3 numbers
+            let a1=14;
+            let b1=43;
+            let c1=5;
+            if(a1>b1 && a1>c1){
+                console.log(a1,"It's greatest");
+            }
+            else if(b1>a1 && b1>c1){
+                console.log(b1,"It's greatest");
+            }
+            else{
+                console.log(c1,"It's greatest");
+            }
+            //To find the largest number in the given 2 numbers
+            let a2=56;
+            let b2=12;
+            if(a2>b2){
+                console.log(a2,"It's greatest");
+            }
+            else{
+                console.log(b2,"It's greatest");
+            }
+            //Fibonoci series
+            let num1=10;
+            a=0,b=1;
+            console.log(a);
+            console.log(b);
+            for(let i=3;i<=num1;i++){
+                let c=a+b;
+                console.log(c);
+                a=b;
+                b=c;
+            }
+        </script>
+    </body>
+</html>

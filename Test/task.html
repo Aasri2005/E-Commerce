@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Concepts Demo</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+            background: linear-gradient(to right, #92d3f2, #afb2b7);
+        }
+
+        header {
+            background-color: #f48d8d;
+            padding: 15px;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #333;
+        }
+
+        .task-list {
+            margin-top: 10px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .task-list li {
+            background: #fff;
+            margin-bottom: 10px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .task-list span {
+            font-size: 16px;
+            flex-grow: 1;
+        }
+
+        .task-list button {
+            background-color: #ff4d4d;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .task-list button:hover {
+            background-color: #ff1a1a;
+        }
+    </style>
+</head>
+<body>
+   <header id="header">
+        <h1 id="heading">EveryDay Task List</h1>
+   </header>
+
+   <br>
+   <input type="text" id="taskInput" placeholder="Enter a task" oninput="inputChange()" />
+   <button id="addTaskButton">Add Task</button>
+
+   <h2>Tasks</h2>
+   <ul class="task-list" id="taskList">
+       <!-- Tasks will be dynamically added here -->
+   </ul>
+
+   <script>
+        function inputChange() {
+            console.log("something is being entered into the field");
+        }
+
+        const taskInput = document.getElementById('taskInput');
+        const addTaskButton = document.getElementById('addTaskButton');
+        const taskList = document.getElementById("taskList");
+
+        addTaskButton.addEventListener('click', () => {
+            const taskText = taskInput.value.trim();
+            console.log("tasktext", taskText);
+
+            if (taskText === '') {
+                alert("Please enter a task!");
+                return;
+            }
+
+            const listItem = document.createElement('li');
+            const taskspan = document.createElement('span');
+            taskspan.textContent = taskText;
+
+            const deleteButton = document.createElement('button');
+            deleteButton.textContent = 'Delete';
+            deleteButton.style.color = 'white';
+
+            deleteButton.addEventListener('click', () => {
+                taskList.removeChild(listItem);
+            });
+
+            listItem.appendChild(taskspan);
+            listItem.appendChild(deleteButton);
+            taskList.appendChild(listItem);
+
+            taskInput.value = '';
+        });
+    </script>
+</body>
+</html>

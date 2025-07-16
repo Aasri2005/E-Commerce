@@ -1,0 +1,27 @@
+<t1>Document</t1>
+<h1 id="heading">hello</h1>
+<p class="name">Naina</p>
+<p class="note">Aasritha</p>
+<p class="note">harshitha</p>
+<h2>sneha</h2>
+<h2>dimpu</h2>
+<li>one</li>
+<li>two</li>
+<script>
+    let head=document.getElementById("heading");
+    let head1=document.getElementsByClassName("note");
+    let head2=document.getElementsByTagName("h2");
+    let head3=document.querySelectorAll("li");
+    let head4=document.querySelector("note");
+    document.getElementById("heading").innerText="heyy!!harshitha";
+    document.getElementById("heading").innerHTML="<b> hello</b>";
+   
+    //creating an element 
+    let create=document.createElement("p");
+    //adding text in my element
+    create.innerText="This is my paragraph";
+    //appending element to my parent 
+    document.body.appendChild(create);
+    //remove
+    document.getElementById("heading").remove();
+</script>

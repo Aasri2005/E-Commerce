@@ -1,38 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-width=1.0">
-       <title>NETFLIX</title>
-       <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>NETFLIX</h1>
-        <select id="language" name="language" >
-            <option value="English">English</option>
-            <option value="Hindi">Hindi</option>
-        </select>
-        <button id="signin" name="signin">Sign in</button>
-        <div class="container">
-            <form>
-                <h2>Unlimited movies, TV shows<br>and more</h2>
-                <p>Starts at ₹149. Cancel at any time.</p>
-                <p>Ready to watch? Enter your email to create or restart your membership.</p>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                <button id="getstarted" name="getstarted">Get Started ></button>
-            </form>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>NETFLIX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>NETFLIX</h1>
+    <select id="language" name="language">
+        <option value="English">English</option>
+        <option value="Hindi">Hindi</option>
+    </select>
+    <button id="signin" name="signin" target="_blank"><a href="signin.html" style="text-decoration: none; color: white; " target="_blank" >Sign in</a></button>
+    <div class="container">
+        <form>
+            <h2>Unlimited movies, TV shows<br>and more</h2>
+            <h5>Starts at ₹149. Cancel at any time.</h5>
+            <h5>Ready to watch? Enter your email to create or restart your membership.</h5>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <button id="getstarted" name="getstarted">Get Started ></button>
+        </form>
+    </div>
+    <br><br><br>
+    <h3>Trending Now</h3>
+
+    <div class="image">
+        <div class="card">
+            <img src="kpop.jpg" height="200" width="150" style="border-radius: 20px">
+            <div class="number">1</div>
         </div>
+        <div class="card">
+            <img src="squid.jpg" height="200" width="150" style="border-radius: 20px">
+            <div class="number">2</div>
+        </div>
+        <div class="card">
+            <img src="hit3.jpg" height="200" width="150" style="border-radius: 20px">
+            <div class="number">3</div>
+        </div>
+        <div class="card">
+            <img src="raid.jpg" height="200" width="150" style="border-radius: 20px">
+            <div class="number">4</div>
+        </div>
+        <div class="card">
+            <img src="pushpa.jpg" height="200" width="150" style="border-radius: 20px">
+            <div class="number">5</div>
+        </div>
+        <div class="card">
+            <img src="bahubali.jpg" height="200" width="150" style="border-radius: 20px">
+            <div class="number">6</div>
+        </div>
+        <div class="card">
+            <img src="bahubali2.jpg" height="200" width="150" style="border-radius: 20px">
+            <div class="number">7</div>
+        </div>
+        <div class="card">
+            <img src="retro.jpg" height="200" width="150" style="border-radius: 20px">
+            <div class="number">8</div>
+        </div>
+        <div class="card">
+            <img src="rana.jpg" height="200" width="150" style="border-radius: 20px">
+            <div class="number">9</div>
+        </div>
+    </div>
+    <br>
+    <h3>More reasons to join</h3>
+    <div class="box">
+
         <br><br><br>
-        <h3>Trending Now</h3>
-       
-        <div class="image">
-            <img src="kpop.jpg" height="200" width="150">
-            <img src="squid.jpg" height="200" width="150" >
-            <img src="hit3.jpg" height="200" width="150" >
-            <img src="raid.jpg" height="200" width="150" >
-            <img src="pushpa.jpg" height="200" width="150" >
-            <img src="bahubali.jpg" height="200" width="150" >
-            <img src="bahubali2.jpg" height="200" width="150" >
-        </div>  
-    </body>
+        <div class="box1">Enjoy on your TV
+            <div class="data">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more
+            </div>
+            <img src="tv.jpg" height="50px" width="50px" style="position: absolute">
+        </div>
+        <div class="box1">Download your shows to watch offline
+            <div class="data">Save your favourites easily and always have something to watch.</div>
+            <img src="download.jpg" height="50px" width="50px" style="position: absolute">
+        </div>
+        <div class="box1">Watch everywhere
+            <div class="data">Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</div>
+            <img src="tele.jpg" height="50px" width="50px" style="position: absolute">
+        </div>
+        <div class="box1">Create profiles for kids
+            <div class="data">Send kids on adventures with their favourite characters in a space made just for them —
+                free with your membership.</div>
+            <img src="profile.jpg" height="50px" width="50px" style="position: absolute">
+        </div>
+    </div>
+    <div class="container">
+        <h3>Frequenty Asked Questions</h3>
+        <details>
+            <summary style="background-color:black"  >What is Netflix?</summary>
+            <p style="color:white; background-color:black; font-size:25px;padding:20px">Netflix is a streaming service that offers a
+                wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of
+                internet-connected devices. You can watch as much as you want, whenever you want, without a single ad –
+                all for one low monthly price.There's always something new to discover, and new TV shows and movies are
+                added every week!</p>
+        </details><br>
+        <details>
+            <summary style="background-color: black" >How much does Netflix cost?</summary>
+            <p style="color: white; background-color:black; font-size:25px;padding:20px">Watch Netflix on your smartphone, tablet,
+                Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a
+                month. No extra costs, no contracts.</p>
+        </details> <br>
+        <details>
+            <summary style="background-color: black">Where can I watch?</summary>
+            <p style="color: white; background-color:black; font-size:25px;padding:20px">Watch anywhere, anytime. Sign in with your
+                Netflix account to watch instantly on the web at netflix.com from your personal computer or on any
+                internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets,
+                streaming media players and game consoles.
+
+                You can also download your favourite shows with the iOS or Android app. Use downloads to watch while
+                you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+        </details><br>
+        <details>
+            <summary style="background-color:black" >What can I watch on Netflix?</summary>
+            <p style="color:white; background-color:black; font-size:25px;padding:20px">Netflix has an extensive library of feature
+                films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you
+                want, anytime you want.</p>
+        </details><br>
+        <details>
+            <summary style="background-color:black" >Is Netflix good for kids?</summary>
+            <p style="color:white; background-color:black; font-size:25px;padding:20px">The Netflix Kids experience is included in
+                your membership to give parents control while kids enjoy family-friendly TV shows and films in their own
+                space.
+
+                Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of
+                content kids can watch and block specific titles you don’t want kids to see.</p>
+        </details><br>
+    </div>
+    <br><br><br>
+    <h5>Ready to watch? Enter your email to create or restart your membership.</h5>
+    <div class="con1">
+        <input type="email" id="email1" name="email" placeholder="Enter your email" required>
+        <button id="getstarted1" name="getstarted1">Get Started ></button>
+    </div><br><br><br><br><br>
+    <h5 style="color:rgb(252, 249, 249);font-size:15px;text-align:left;position:absolute;margin:15px">Questions? Call</h5><a href="#" style="position: absolute; margin:15px;left:120px; color:white" >000-800-919-1743</a>
+    <br><br><br>
+    <div class="link">
+        <a href="#" style="color:rgb(250, 250, 253)">FAQ</a>
+        <a href="#" style="color:rgb(250, 250, 253)">Help Center</a>
+        <a href="#" style="color:rgb(250, 250, 253)">Account</a>
+        <a href="#" style="color:rgb(250, 250, 253)">Media Center</a>
+        <a href="#" style="color:rgb(250, 250, 253)">Investor Relations</a>
+        <a href="#" style="color:rgb(250, 250, 253)">Jobs</a>
+        <a href="#" style="color:rgb(250, 250, 253)">Ways to Watch</a>
+        <a href="#" style="color:rgb(250, 250, 253)">Terms of Use</a>
+        <a href="#" style="color:rgb(250, 250, 253)">Privacy</a>
+        <a href="#" style="color:rgb(250, 250, 253)">Cookie Preferences</a>
+        <a href="#" style="color:rgb(250, 250, 253)">Corporate Information</a>
+        <a href="#" style="color:rgb(250, 250, 253)">Contact Us</a>
+        <a href="#" style="color:rgb(250, 250, 253)">Speed Test</a>
+        <a href="#" style="color:rgb(250, 250, 253)">Legal Notices</a>
+        <a href="#" style="color:rgb(250, 250, 253)">Only on Netflix</a>
+    </div>
+    <br><br><br>
+    <select id="language1" name="language1">
+        <option value="English">English</option>
+        <option value="Hindi">Hindi</option>
+    </select>
+    <br><br><br><br><br><br>
+    <h5 style="color:rgb(243, 239, 239);font-size:15px;text-align:left;position:absolute;margin:20px; top:2435px">Netflix India</h5>
+    <br><br><br><br>
+    <h6>This page is protected by Google reCAPTCHA to ensure you're not a bot.<a href="#" style="position:absolute;left:500px;top:2490px;color:blue">Learn more.</a></h6>
+</body>
+
 </html>
